@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div ref={animate} className="z-50 ">
-      <div className="flex justify-end py-5 md:justify-center bg-[#09091137] border-b-[1px] border-gray-700">
+      <div className="flex justify-end border-b-[1px] border-gray-700 bg-[#09091137] py-5 md:justify-center">
         <div
           className={
             !navbar
@@ -46,7 +46,9 @@ const Navbar = () => {
             <ul className="flex gap-8">
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
                 <p className="text-3xl font-bold">
-                  <Link href="/"><span className=" text-[#0043FF] ">//</span> Maciek</Link>
+                  <Link href="/">
+                    <span className=" text-[#0043FF] ">//</span> Maciek
+                  </Link>
                 </p>
               </li>
             </ul>
@@ -55,7 +57,7 @@ const Navbar = () => {
           <div>
             <ul className="flex gap-8">
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
-              <Link href="/">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
                 About

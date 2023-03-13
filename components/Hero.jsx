@@ -3,6 +3,7 @@ import heroImg from "../public/hero_img.png";
 import siatka from "../public/siatka.svg";
 import Image from "next/image";
 import ButtonFill from "./ButtonFill";
+import ButtonOutline from "./ButtonOutline";
 
 const Hero = () => {
   return (
@@ -21,9 +22,7 @@ const Hero = () => {
           </h1>
           <div className="mt-2 flex gap-4 xl:justify-start">
             <ButtonFill>Contact</ButtonFill>
-            <button className="w-[150px] rounded-lg border border-white bg-white bg-opacity-0 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-opacity-100 hover:text-[#006aff] hover:shadow-lg hover:shadow-white">
-              Portfolio
-            </button>
+            <ButtonOutline>Portfolio</ButtonOutline>
           </div>
         </div>
 

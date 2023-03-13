@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "../public/avatar.png";
 import Image from "next/image";
+import ButtonFill from "./ButtonFill";
 
 const About = () => {
   return (
@@ -19,12 +20,8 @@ const About = () => {
             that I love to learn new things and technologies.
           </h1>
           <div className="mt-2 flex gap-4 xl:justify-start">
-            <button className="w-[150px] rounded-lg bg-[#0043ff] py-2 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-[#006aff] hover:shadow-lg hover:shadow-[#006aff]">
-              Contact
-            </button>
-            <button className="w-[150px] rounded-lg border border-white bg-white bg-opacity-0 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-opacity-100 hover:text-[#006aff] hover:shadow-lg hover:shadow-white">
-              Portfolio
-            </button>
+            <ButtonFill>Resume</ButtonFill>
+            
           </div>
         </div>
 
