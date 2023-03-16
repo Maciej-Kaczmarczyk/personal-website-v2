@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
+import Navbar from "../components/sections/Navbar";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
 import Blob from "../components/Blob";
 
 export default function Home() {

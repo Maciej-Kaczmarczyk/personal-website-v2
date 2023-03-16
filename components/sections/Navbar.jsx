@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
+import ToggleSwitch from "../ToggleSwitch";
+
 
 const Navbar = () => {
   const [animate] = useAutoAnimate();
@@ -11,9 +13,10 @@ const Navbar = () => {
     setNavbar(!navbar);
   };
 
+
   return (
     <div ref={animate} className="z-50 ">
-      <div className="flex justify-end border-b-[1px] border-gray-700 bg-[#09091137] py-5 md:justify-center">
+      <div className="flex justify-end fixed top-0 w-full border-b-[1px] border-gray-700 bg-[#09091137] dark:border-b-[0px] dark:bg-gray-dark py-5 md:justify-center">
         <div
           className={
             !navbar
@@ -36,18 +39,18 @@ const Navbar = () => {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <p className="text-2xl font-bold text-white">
-            <span className=" text-[#0043FF] ">//</span> Maciek
+          <p className="text-2xl font-bold text-white ">
+            <span className="text-blue">//</span> Maciek
           </p>
         </div>
 
-        <div className="text-md font-md hidden w-full items-center justify-between text-white md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div className="text-md font-md hidden w-full items-center justify-between text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div>
             <ul className="flex gap-8">
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 <p className="text-3xl font-bold">
                   <Link href="/">
-                    <span className=" text-[#0043FF] ">//</span> Maciek
+                    <span className=" text-blue ">//</span> Maciek
                   </Link>
                 </p>
               </li>
@@ -56,16 +59,16 @@ const Navbar = () => {
 
           <div>
             <ul className="flex gap-8">
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 <Link href="/">Home</Link>
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 About
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 Skills
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 <Link href="/works">Works</Link>
               </li>
             </ul>
@@ -73,8 +76,9 @@ const Navbar = () => {
 
           <div>
             <ul className="flex gap-8">
+              <ToggleSwitch />
               <li>
-                <button className="w-[150px] rounded-lg bg-[#0043ff] py-2 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-[#006aff] hover:shadow-lg hover:shadow-[#006aff]">
+                <button className="w-[150px] rounded-lg bg-blue py-2 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-blue-light hover:shadow-md hover:shadow-blue-light">
                   Contact
                 </button>
               </li>
@@ -102,21 +106,21 @@ const Navbar = () => {
           </div>
           <div className="pt-20 ">
             <ul className="flex flex-col items-center gap-6 text-center text-xl text-white">
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 Home
               </li>
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 About
               </li>
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 Portfolio
               </li>
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 Contact
               </li>
             </ul>
             <ul className="flex justify-center gap-8 pt-12 text-xl text-white">
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 <a
                   href="https://www.linkedin.com/in/maciejkaczmarczyk01/"
                   target="blank"
@@ -131,7 +135,7 @@ const Navbar = () => {
                   </svg>
                 </a>
               </li>
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 <a
                   href="https://www.behance.net/maciej_kaczmarczyk"
                   target="blank"
@@ -146,7 +150,7 @@ const Navbar = () => {
                   </svg>
                 </a>
               </li>
-              <li className="w-fit transition-all hover:cursor-pointer hover:text-[#0043FF]">
+              <li className="w-fit transition-all hover:cursor-pointer hover:text-blue">
                 <a href="https://github.com/Maciej-Kaczmarczyk" target="blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

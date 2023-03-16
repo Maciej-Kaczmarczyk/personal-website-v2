@@ -4,15 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
+@layer base {
+  body {
+    @apply bg-gray-dark dark:bg-white;
+    @apply box-border;
+    @apply overflow-y-auto;
+    @apply overflow-x-hidden
+  }
 }
 
-:root {
+body {
   font-family: "Inter", sans-serif;
-  background: #090911;
-  box-sizing: border-box;
 }
 
 @keyframes rotate {
@@ -76,4 +78,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
