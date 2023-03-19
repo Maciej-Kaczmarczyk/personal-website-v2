@@ -26,7 +26,7 @@ export const Blob = () => {
   return (
     <div
       ref={blob}
-      className="animate-rotate fixed -z-10 hidden aspect-[1] h-[600px] w-[600px] rounded-full bg-gradient-to-r from-blue dark:opacity-30 to-purple blur-[10px] lg:block"
+      className="animate-rotate fixed -z-10 hidden aspect-[1] h-[600px] w-[600px] rounded-full bg-gradient-to-r from-blue dark:opacity-100 to-purple blur-[10px] lg:block"
     ></div>
   );
 };

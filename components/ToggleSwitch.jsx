@@ -20,14 +20,14 @@ const ToggleSwitch = () => {
         />
         <div
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="peer dark:text-white h-6 w-11 rounded-full border-[1px] border-gray-400 bg-[#09091137] after:absolute  after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#0043ff] peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-[#0043ff]"
+          className="peer dark:text-white h-6 w-11 rounded-full border-[1px] border-gray-light bg-gray after:absolute  after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-blue"
         ></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill={theme === "light" ? "none" : "white"}
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke="white"
           className="ml-2 h-6 w-6 dark:text-white"
         >
           <path

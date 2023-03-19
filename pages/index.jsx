@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="-z-00 absolute top-0 h-[2000px] w-[100vw] overflow-hidden">
+      <div className="-z-00 absolute hidden lg:block top-0 h-[2000px] w-[100vw] overflow-hidden">
         <div className="absolute top-0 z-20 hidden h-[2000px] w-[100vw] overflow-hidden backdrop-blur-[10vmax] backdrop-filter lg:block"></div>
         <Blob />
       </div>

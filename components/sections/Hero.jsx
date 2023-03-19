@@ -7,16 +7,16 @@ import ButtonOutline from "../ButtonOutline";
 
 const Hero = () => {
   return (
-    <div className="relative z-20 my-[22vw] flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-44">
+    <div className="relative z-20 mt-[42vw] flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-44">
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row lg:items-center xl:max-w-screen-xl ">
-        <div className="flex h-full flex-col gap-4 lg:w-1/2">
-          <h2 className="text-7xl font-black text-white dark:text-black xl:text-8xl">
+        <div className="flex h-full flex-col gap-4 w-full lg:w-1/2">
+          <h2 className="text-7xl font-black text-white dark:text-gray-dark xl:text-8xl">
             Hello, <br /> I'm{" "}
             <span className="bg-gradient-to-r from-blue to-purple bg-clip-text text-transparent">
               Maciek!
             </span>
           </h2>
-          <h1 className="max-w-md text-[#919EC0] dark:text-black lg:max-w-xl xl:text-2xl">
+          <h1 className="max-w-md text-gray-light dark:text-gray-dark lg:max-w-xl xl:text-2xl">
             I am a designer, developer and a big fan of new technologies. Let's
             create something awesome together!
           </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
             src={heroImg}
             alt="/"
           />
-          <div className="absolute right-0 -z-10 h-[400px] w-full bg-gradient-to-t from-[#090911] to-[#ffffff00] md:top-32 md:-right-20 lg:hidden"></div>
+          <div className="absolute right-0 -z-10 h-[400px] w-full bg-gradient-to-t from-gray-dark dark:from-white to-transparent md:top-32 md:-right-20 lg:hidden"></div>
         </div>
 
         <div className="absolute top-40 left-0 -z-10 aspect-square w-[30vw] rounded-full bg-blue opacity-20 dark:opacity-40 blur-[100px] lg:blur-[200px]"></div>

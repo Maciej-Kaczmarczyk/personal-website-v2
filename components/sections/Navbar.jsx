@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import ToggleSwitch from "../ToggleSwitch";
-
+import disableScroll from "disable-scroll";
 
 const Navbar = () => {
   const [animate] = useAutoAnimate();
@@ -13,10 +13,14 @@ const Navbar = () => {
     setNavbar(!navbar);
   };
 
+  useEffect(() => {
+    if (navbar) disableScroll.on();
+    else disableScroll.off();
+  }, [navbar]);
 
   return (
-    <div ref={animate} className="z-50 ">
-      <div className="flex justify-end fixed top-0 w-full border-b-[1px] border-gray-700 bg-[#09091137] dark:border-b-[0px] dark:bg-gray-dark py-5 md:justify-center">
+    <div className="z-50">
+      <div className="z-50 border-gray-700 fixed top-0 flex w-full justify-end border-b-[1px] bg-[#09091137] py-5 dark:border-b-[0px] dark:bg-gray-dark md:justify-center">
         <div
           className={
             !navbar
@@ -87,7 +91,7 @@ const Navbar = () => {
         </div>
       </div>
       {navbar ? (
-        <div className="absolute top-0 z-10 flex h-[100vh] w-full flex-col overflow-hidden bg-[#121120] md:hidden">
+        <div className="fixed top-0 z-50 flex h-[100vh] w-full flex-col overflow-hidden bg-gray-dark md:hidden">
           <div className="flex justify-end" onClick={toggleNavbar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +167,12 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <ul className="flex justify-center mt-20">
+            <ToggleSwitch/>
+            </ul>
+            
           </div>
+          
         </div>
       ) : null}
     </div>

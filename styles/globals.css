@@ -9,7 +9,8 @@
     @apply bg-gray-dark dark:bg-white;
     @apply box-border;
     @apply overflow-y-auto;
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden;
+    @apply transition-colors duration-200;
   }
 }
 
