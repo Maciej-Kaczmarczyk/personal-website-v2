@@ -3,6 +3,7 @@ import Navbar from "../components/sections/Navbar";
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Blob from "../components/Blob";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
@@ -14,12 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="-z-00 absolute hidden lg:block top-0 h-[2000px] w-[100vw] overflow-hidden">
-        <div className="absolute top-0 z-20 hidden h-[2000px] w-[100vw] overflow-hidden backdrop-blur-[10vmax] backdrop-filter lg:block"></div>
+      <div className="-z-00 absolute hidden lg:block top-0 h-[3000px] w-[100vw] overflow-hidden ">
+        <div className="absolute top-0 z-20 hidden h-[3000px] w-[100vw] overflow-hidden backdrop-blur-[10vmax] backdrop-filter lg:block"></div>
         <Blob />
       </div>
       <Hero />
       <About />
+      <Skills/>
     </>
   );
 }

@@ -17,13 +17,12 @@ module.exports = {
       white: "#ffffff",
       gray: {
         light: "#919EC0",
-        DEFAULT: "##141423",
+        DEFAULT: "#141423",
         dark: "#090911",
       },
-      tahiti: {
-        light: "#67e8f9",
-        DEFAULT: "#06b6d4",
-        dark: "#0e7490",
+      yellow: {
+        light: "#ffec3f",
+        DEFAULT: "#cfc929",
       },
       blue: {
         light: "#006aff",
@@ -31,9 +30,9 @@ module.exports = {
         dark: "#0e7490",
       },
       purple: {
-        light: "#6f42c1",
+        light: "#8d36ff",
         DEFAULT: "#6f00ff",
-      }
+      },
 
       // ...
     },
