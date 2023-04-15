@@ -6,14 +6,14 @@ import ButtonFill from "../ButtonFill";
 const About = () => {
   return (
     <div className="relative z-20 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
-      <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center lg:justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center xl:max-w-screen-xl ">
-        <div className="flex h-full flex-col gap-4 text-center lg:text-start lg:w-1/2">
+      <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
+        <div className="flex h-full flex-col gap-4 text-center lg:w-1/2 lg:text-start">
           <h2 className="text-6xl font-black text-white dark:text-gray-dark xl:text-8xl">
             About me
           </h2>
           <h1 className="max-w-md text-[#919EC0] dark:text-black lg:max-w-none xl:text-2xl">
-            My name is Maciek Kaczmarczyk and I'm a creative person based in
-            Poland. My main goal is just to create awesome things. Now I'm 21
+            My name is Maciek Kaczmarczyk and I&apos;m a creative person based in
+            Poland. My main goal is just to create awesome things. Now I&apos;m 21
             years old but since 14 I have already tried graphic design, video
             editing, and 3D modeling. Since last year I have been mainly focused
             on UI/UX designing and fronted development. My greatest asset is
@@ -39,11 +39,11 @@ const About = () => {
                 <p>Resume</p>
               </div>
             </ButtonFill>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                fill="#2DA539"
+                fill="#1ec993"
                 class="h-7 w-7"
               >
                 <path
@@ -52,22 +52,30 @@ const About = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              <p className="text-white dark:text-gray-dark text-lg text-left leading-5">avilable for work</p>
+              <p className="text-left text-lg leading-5 text-white dark:text-gray-dark">
+                avilable for work
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="card relative flex max-w-lg aspect-auto items-center justify-center rounded-3xl p-8 lg:h-fit lg:w-fit">
+        <div className="card relative flex aspect-auto max-w-lg items-center justify-center overflow-hidden rounded-3xl p-8 lg:h-fit lg:w-fit">
           <Image
             src={avatar}
             alt=""
             className=" aspect-square w-[400px] rounded-2xl"
           />
+          <div
+            className={`absolute -bottom-40 -right-40 -z-10 aspect-square w-full rounded-full bg-blue opacity-20 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
+          ></div>
+          <div
+            className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-purple opacity-20 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
+          ></div>
         </div>
 
-        <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 dark:opacity-70 blur-[100px] lg:blur-[200px]"></div>
+        <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]"></div>
         <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
-        <div className="hidden bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-yellow opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
+        <div className="bg-yellow bottom-40 right-0 -z-10 hidden aspect-square w-[20vw] rounded-full opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
       </div>
     </div>
   );

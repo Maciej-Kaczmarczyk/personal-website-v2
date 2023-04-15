@@ -58,21 +58,21 @@ const Skills = () => {
       <div className="flex h-fit w-full max-w-screen-xl flex-col items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-col lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full w-full flex-col items-center gap-4 text-center">
           <h2 className="text-6xl font-black text-white dark:text-gray-dark xl:text-8xl">
-            What can I do?
+            My skills
           </h2>
           <h1 className=" max-w-md justify-center text-[#919EC0] dark:text-black lg:max-w-none xl:text-2xl">
             Some of my awsome skills
           </h1>
         </div>
 
-        <div className="mt-20 flex w-full flex-wrap items-center justify-around gap-6 gap-y-20">
+        <div className="mt-10 flex w-full flex-wrap items-center justify-around gap-6 gap-y-20">
           <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
             <div className={`w-fit rounded-xl bg-blue p-4`}>{codeIcon}</div>
             <h2 className=" text-5xl font-bold dark:text-gray">Code</h2>
             <p className="text-lg dark:text-gray">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              assumenda odit eius voluptatem temporibus molestiae incidunt
-              quidem libero impedit corporis!
+              I have frontend skills in technologies such as HTML, CSS,
+              Javascript, React, and Tailwind in addition I also have basic
+              skills in Nodejs, Python, SQL, and MongoDB
             </p>
             <ButtonFill color="blue" className={"mt-20 w-full"}>
               See more
@@ -82,7 +82,7 @@ const Skills = () => {
             ></div>
           </div>
           <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
-            <div className={`w-fit rounded-xl bg-yellow p-4`}>{uiIcon}</div>
+            <div className={`w-fit rounded-xl bg-green p-4`}>{uiIcon}</div>
             <h2 className=" text-5xl font-bold dark:text-gray">UI/UX</h2>
             <p className="text-lg dark:text-gray">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
@@ -91,13 +91,13 @@ const Skills = () => {
             </p>
             <ButtonFill
               className={
-                "mt-20 w-full bg-yellow hover:bg-yellow-light hover:shadow-yellow-light"
+                "mt-20 w-full bg-green hover:bg-green-light hover:shadow-green-light"
               }
             >
               See more
             </ButtonFill>
             <div
-              className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-yellow opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
+              className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-green opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
             ></div>
           </div>
           <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
@@ -121,8 +121,8 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]"></div>
-        <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div> */}
+        <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]"></div>
+        <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
       </div>
     </div>
   );

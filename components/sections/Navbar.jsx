@@ -22,8 +22,8 @@ const Navbar = () => {
 
 
   return (
-    <div >
-      <div className="border-gray-700 fixed top-0 z-50 flex w-full justify-end border-b-[1px] bg-[#090911] py-5 dark:border-[#e3e3e3] dark:gray-dark md:justify-center">
+    <nav>
+      <div className="border-gray-700 fixed top-0 z-50 flex w-full justify-end border-b-[1px] bg-[#090911] py-5 dark:bg-white shadow-xl md:justify-center">
         <div
           className={
             !navbar
@@ -46,8 +46,8 @@ const Navbar = () => {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <p className="text-2xl font-bold text-white">
-            <span className="text-blue">//</span> Maciek
+          <p className="text-2xl font-bold text-white dark:text-[#090911]">
+            <span className="text-blue"></span> Maciek
           </p>
         </div>
 
@@ -57,14 +57,14 @@ const Navbar = () => {
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 <p className="text-3xl font-bold ">
                   <Link href="/">
-                    <span className=" text-blue ">//</span> Maciek
+                    <span className=" text-blue "></span> <span className="dark:text-[#090911]">Maciek</span>
                   </Link>
                 </p>
               </li>
             </ul>
           </div>
 
-          <div className="">
+          <div className="dark:text-black">
             <ul className="flex gap-8">
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
                 <Link href="/">Home</Link>
@@ -178,7 +178,7 @@ const Navbar = () => {
           </div>
         </div>
       ) : null}
-    </div>
+    </nav>
   );
 };
 

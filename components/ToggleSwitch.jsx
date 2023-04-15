@@ -25,7 +25,7 @@ const ToggleSwitch = () => {
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill={theme === "light" ? "white" : "white"}
+          fill={theme === "light" ? "white" : "black"}
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           className="ml-2 h-6 w-6 dark:text-white"

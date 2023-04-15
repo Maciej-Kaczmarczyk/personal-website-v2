@@ -11,13 +11,13 @@ const Hero = () => {
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-4 w-full lg:w-1/2">
           <h2 className="text-7xl font-black text-white dark:text-gray-dark xl:text-8xl">
-            Hello, <br /> I'm{" "}
+            Hello, <br /> I&apos;m
             <span className="text-white dark:text-gray-dark">
               Maciek!
             </span>
           </h2>
           <h1 className="max-w-md text-gray-light dark:text-gray-dark lg:max-w-xl xl:text-2xl">
-            I am a designer, developer and a big fan of new technologies. Let's
+            I am a designer, developer and a big fan of new technologies. Let&apos;s
             create something awesome together!
           </h1>
           <div className="mt-2 flex gap-4 xl:justify-start">
