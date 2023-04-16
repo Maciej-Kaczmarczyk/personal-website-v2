@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="border-gray-700 fixed top-0 z-50 flex w-full justify-end border-b-[1px] bg-[#090911] py-5 dark:bg-white shadow-xl md:justify-center">
+      <div className="fixed top-0 z-50 flex w-full justify-end bg-[#090911] py-5 dark:bg-white shadow-xl md:justify-center">
         <div
           className={
             !navbar
@@ -38,7 +38,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.8"
             stroke="currentColor"
-            className="h-fit w-8 text-white dark:text-white"
+            className="h-fit w-8 text-white dark:text-black"
           >
             <path
               strokeLinecap="round"
@@ -66,16 +66,16 @@ const Navbar = () => {
 
           <div className="dark:text-black">
             <ul className="flex gap-8">
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
+              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
                 <Link href="/">Home</Link>
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
+              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
                 About
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
+              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
                 Skills
               </li>
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
+              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
                 <Link href="/works">Works</Link>
               </li>
             </ul>
