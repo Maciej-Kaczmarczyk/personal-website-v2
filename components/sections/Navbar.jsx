@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
-import ToggleSwitch from "../ToggleSwitch";
+import ToggleSwitch from "../ThemeSwitch";
 import disableScroll from "disable-scroll";
 
 const Navbar = () => {
