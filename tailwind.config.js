@@ -36,7 +36,26 @@ module.exports = {
 
       // ...
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'button': '0px -1px 24px -3px',
+      },
+      keyframes: {
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left bottom'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right bottom'
+          }
+        },
+      },
+      animation: {
+        'gradient-x': 'gradient-x 2s ease infinite'
+      },
+    },
   },
   plugins: [],
 };

@@ -57,7 +57,7 @@ const Skills = () => {
     <div className="relative z-20 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
       <div className="flex h-fit w-full max-w-screen-xl flex-col items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-col lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full w-full flex-col items-center gap-4 text-center">
-          <h2 className="text-6xl font-black text-white dark:text-gray-dark xl:text-8xl">
+          <h2 className="text-6xl font-bold text-white dark:text-gray-dark xl:text-8xl">
             My skills
           </h2>
           <h1 className=" max-w-md justify-center text-[#919EC0] dark:text-black lg:max-w-none xl:text-2xl">
@@ -74,7 +74,7 @@ const Skills = () => {
               Javascript, React, and Tailwind in addition I also have basic
               skills in Nodejs, Python, SQL, and MongoDB
             </p>
-            <ButtonFill color="blue" className={"mt-20 w-full"}>
+            <ButtonFill className={"mt-20 w-full"}>
               See more
             </ButtonFill>
             <div
@@ -91,7 +91,7 @@ const Skills = () => {
             </p>
             <ButtonFill
               className={
-                "mt-20 w-full bg-green hover:bg-green-light hover:shadow-green-light"
+                "mt-20 w-full bg-green hover:bg-green-light shadow-green-light"
               }
             >
               See more

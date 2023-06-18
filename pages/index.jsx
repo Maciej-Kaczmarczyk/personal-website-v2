@@ -3,7 +3,7 @@ import Navbar from "../components/sections/Navbar";
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Blob from "../components/Blob";
-import Skills from "@/components/sections/Skills";
+import Skills from "@/components/sections/Services";
 
 export default function Home() {
   return (

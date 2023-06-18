@@ -8,7 +8,7 @@ const About = () => {
     <div className="relative z-20 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-4 text-center lg:w-1/2 lg:text-start">
-          <h2 className="text-6xl font-black text-white dark:text-gray-dark xl:text-8xl">
+          <h2 className="text-6xl font-bold text-white dark:text-gray-dark xl:text-8xl">
             About me
           </h2>
           <h1 className="max-w-md text-[#919EC0] dark:text-black lg:max-w-none xl:text-2xl">

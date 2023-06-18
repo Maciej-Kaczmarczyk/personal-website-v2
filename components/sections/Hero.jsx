@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="relative z-20 mt-[42vw] flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-44">
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-4 w-full lg:w-1/2">
-          <h2 className="text-7xl font-black text-white dark:text-gray-dark xl:text-8xl">
+          <h2 className="text-7xl font-bold text-white dark:text-gray-dark xl:text-8xl">
             Hello, <br /> I&apos;m Maciek!
           </h2>
           <h1 className="max-w-md text-gray-light dark:text-gray-dark lg:max-w-xl xl:text-2xl">
@@ -19,16 +19,11 @@ const Hero = () => {
           </h1>
           <div className="mt-2 flex gap-4 xl:justify-start">
             <ButtonFill>Contact</ButtonFill>
-            <ButtonOutline>Portfolio</ButtonOutline>
           </div>
         </div>
 
         <div className="relative flex h-48 w-full items-center justify-end lg:h-fit lg:w-1/2">
-          <Image
-            className="absolute right-0 -z-10 w-[400px] md:top-32 md:-right-20 lg:relative lg:top-0 lg:right-0 lg:z-10 lg:w-full"
-            src={heroImg}
-            alt="/"
-          />
+         
           <div className="absolute right-0 -z-10 h-[400px] w-full bg-gradient-to-t from-gray-dark dark:from-white to-transparent md:top-32 md:-right-20 lg:hidden"></div>
         </div>
 

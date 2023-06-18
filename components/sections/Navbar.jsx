@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
-import ToggleSwitch from "../ThemeSwitch";
 import disableScroll from "disable-scroll";
 
 const Navbar = () => {
@@ -18,12 +17,30 @@ const Navbar = () => {
     else disableScroll.off();
   }, [navbar]);
 
+  const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 100;
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled);
+      }
+    };
 
+    document.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      // cleanup
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
 
   return (
     <nav>
-      <div className="fixed top-0 z-50 flex w-full justify-end bg-[#090911] py-5 dark:bg-white shadow-xl md:justify-center">
+      <div
+        className={`fixed top-0 z-50 flex w-full justify-end py-5 duration-300 ease-linear md:justify-center
+    ${scrolled ? "bg-black shadow-xl" : "bg-transparent dark:bg-transparent"}`}
+      >
         <div
           className={
             !navbar
@@ -55,9 +72,10 @@ const Navbar = () => {
           <div>
             <ul className="flex gap-8">
               <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
-                <p className="text-3xl font-bold ">
+                <p className="text-3xl font-medium ">
                   <Link href="/">
-                    <span className=" text-blue "></span> <span className="dark:text-[#090911]">Maciek</span>
+                    <span className=" text-blue "></span>{" "}
+                    <span className="dark:text-[#090911]">// Maciek</span>
                   </Link>
                 </p>
               </li>
@@ -83,9 +101,8 @@ const Navbar = () => {
 
           <div>
             <ul className="flex gap-8">
-              <ToggleSwitch />
               <li>
-                <button className="w-[150px] rounded-lg bg-blue py-2 text-white duration-[200ms] ease-in-out hover:cursor-pointer hover:bg-blue-light hover:shadow-md hover:shadow-blue-light">
+                <button className="w-[150px] rounded-lg border-[1px] border-white py-2 text-white duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-white">
                   Contact
                 </button>
               </li>
@@ -169,9 +186,6 @@ const Navbar = () => {
                   </svg>
                 </a>
               </li>
-            </ul>
-            <ul className="mt-20 flex justify-center">
-              <ToggleSwitch />
             </ul>
             <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-100 blur-[60px] lg:blur-[200px]"></div>
             <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-100 blur-[60px] md:top-10 lg:blur-[200px]"></div>
