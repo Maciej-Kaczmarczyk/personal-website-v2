@@ -69,19 +69,6 @@ const Navbar = () => {
         </div>
 
         <div className="text-md font-md hidden w-full items-center justify-between text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
-          <div>
-            <ul className="flex gap-8">
-              <li className="duration-[200ms] ease-in-out hover:cursor-pointer hover:text-blue">
-                <p className="text-3xl font-medium ">
-                  <Link href="/">
-                    <span className=" text-blue "></span>{" "}
-                    <span className="dark:text-[#090911]">// Maciek</span>
-                  </Link>
-                </p>
-              </li>
-            </ul>
-          </div>
-
           <div className="dark:text-black">
             <ul className="flex gap-8">
               <li className="ease-in-out hover:cursor-pointer hover:text-blue">
