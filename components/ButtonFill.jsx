@@ -1,11 +1,5 @@
 const ButtonFill = ({ children, className }) => {
   return (
-    // <button
-    //   className={`relative w-[200px] rounded-lg bg-blue py-2 text-lg text-white duration-[100ms] ease-in-out hover:cursor-pointer hover:bg-blue-light hover:shadow-lg hover:shadow-blue-light ${className} `}
-    // >
-    //   {children}
-    // </button>
-
     <div
       className={`flex w-[200px] items-center justify-center rounded-lg bg-gradient-to-r from-[#3252ad] to-[#1e4ac3] p-[1px] shadow-button shadow-blue-light ${className}`}
     >

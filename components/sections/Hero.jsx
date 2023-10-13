@@ -10,9 +10,9 @@ const Hero = () => {
     <div className="relative z-20 flex h-fit w-full justify-center overflow-x-clip p-4 pt-80 pb-40">
       <div className="flex flex-col">
         <div className="relative flex h-full flex-col items-center gap-12 text-center">
-          <h2 className="text-7xl font-black text-white xl:text-8xl">
+          <h2 className="relative z-20 text-7xl font-black text-white xl:text-8xl">
             Need a{" "}
-            <span className="bg-gradient-to-r from-[#0043ff] to-[#6f00ff] bg-clip-text text-transparent">
+            <span className="relative z-30 bg-gradient-to-r from-[#0043ff] to-[#6f00ff] bg-clip-text text-transparent">
               creative person
             </span>{" "}
             <br /> for your next project?
@@ -23,11 +23,11 @@ const Hero = () => {
             development of website and SEO. Feel free to contact me!
           </h1>
           <div className="flex gap-8">
-            <ButtonFill>Contact me</ButtonFill>
-            <ButtonOutline>See my work</ButtonOutline>
+            <ButtonFill>Contact</ButtonFill>
+            <ButtonOutline>Portfolio</ButtonOutline>
           </div>
-          <CurvedLine className="absolute -top-[230px] -z-10 " />
-          <CurvedLine2 className="absolute -top-[70px] -z-10" />
+          <CurvedLine className="absolute -top-[230px] z-10 " />
+          <CurvedLine2 className="absolute -top-[70px] z-10" />
         </div>
 
         <div className="relative flex h-48 w-full items-center justify-end lg:h-fit lg:w-1/2">
