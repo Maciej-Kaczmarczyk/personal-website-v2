@@ -7,7 +7,7 @@ import CurvedLine2 from "../CurvedLine2";
 
 const Hero = () => {
   return (
-    <div className="relative z-20 flex h-fit w-full justify-center overflow-x-clip p-4 pt-80 pb-40">
+    <div id="hero" className="relative z-20 flex h-fit w-full justify-center overflow-x-clip p-4 pt-80">
       <div className="flex flex-col">
         <div className="relative flex h-full flex-col items-center gap-12 text-center">
           <h2 className="relative z-20 text-7xl font-black text-white xl:text-8xl">

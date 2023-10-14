@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import disableScroll from "disable-scroll";
+import ButtonOutline from "../ButtonOutline";
 
 const Navbar = () => {
   const [animate] = useAutoAnimate();
@@ -38,8 +39,10 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className={`fixed top-0 z-50 flex w-full justify-end py-5 duration-300 ease-linear md:justify-center
-    ${scrolled ? "bg-black shadow-xl" : "bg-transparent dark:bg-transparent"}`}
+        className={`fixed top-0 z-50 flex w-full justify-center py-4 duration-500 ease-linear md:justify-center ${
+          scrolled ? "" : "bg-transparent dark:bg-transparent"
+        }
+    `}
       >
         <div
           className={
@@ -68,30 +71,28 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div className="text-md font-md hidden w-full items-center justify-between text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div className="text-md font-md hidden w-full items-center justify-center text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="dark:text-black">
             <ul className="flex gap-8">
-              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
-                <Link href="/">Home</Link>
+              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
+                <Link scroll={false} href="/#hero">
+                  Home
+                </Link>
               </li>
-              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
-                About
+              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
+                <Link scroll={false} href="#about">
+                  About
+                </Link>
               </li>
-              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
-                Skills
+              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
+                <Link scroll={false} href="/">
+                  Skills
+                </Link>
               </li>
-              <li className="ease-in-out hover:cursor-pointer hover:text-blue">
-                <Link href="/works">Works</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <ul className="flex gap-8">
-              <li>
-                <button className="w-[150px] rounded-lg border-[1px] border-white py-2 text-white duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black hover:shadow-md hover:shadow-white">
-                  Contact
-                </button>
+              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
+                <Link scroll={false} href="/works">
+                  Works
+                </Link>
               </li>
             </ul>
           </div>
