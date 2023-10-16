@@ -69,3 +69,20 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.headerGradient {
+  background: linear-gradient(99deg, #0043ff 10%, #6f00ff 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blobGradient {
+  background: linear-gradient(99deg, #0043ff 50%, #6f00ff 50%);
+}
+@keyframes spinBlob {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spinBlob {
+  animation: spinBlob 5s linear infinite;
+}

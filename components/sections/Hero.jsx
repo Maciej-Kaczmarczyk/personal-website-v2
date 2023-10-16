@@ -7,22 +7,25 @@ import CurvedLine2 from "../CurvedLine2";
 
 const Hero = () => {
   return (
-    <div id="hero" className="relative z-20 flex h-fit w-full justify-center overflow-x-clip p-4 pt-80">
+    <div
+      id="hero"
+      className="relative z-20 flex h-fit w-full justify-center overflow-x-clip p-4 pt-72"
+    >
       <div className="flex flex-col">
-        <div className="relative flex h-full flex-col items-center gap-12 text-center">
-          <h2 className="relative z-20 text-7xl font-black text-white xl:text-8xl">
-            Need a{" "}
-            <span className="relative z-30 bg-gradient-to-r from-[#0043ff] to-[#6f00ff] bg-clip-text text-transparent">
+        <div className="relative flex h-full flex-col items-center gap-7 text-center">
+          <h2 className="relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-7xl font-black text-transparent drop-shadow-sm xl:text-8xl">
+            <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">Need a </span>
+            <span className="headerGradient relative z-30">
               creative person
             </span>{" "}
             <br /> for your next project?
           </h2>
-          <h1 className="max-w-md font-light leading-4 text-white lg:max-w-4xl xl:text-xl">
-            You are in the right place. My name is Maciek and I will be happy to
+          <h1 className="max-w-md font-light text-white lg:max-w-3xl xl:text-xl xl:leading-relaxed">
+            You are in the right place! My name is Maciek and I will be happy to
             help with all kind of creative work, from graphic design, UI/UX to
             development of website and SEO. Feel free to contact me!
           </h1>
-          <div className="flex gap-8">
+          <div className="mt-6 flex gap-8">
             <ButtonFill>Contact</ButtonFill>
             <ButtonOutline>Portfolio</ButtonOutline>
           </div>
