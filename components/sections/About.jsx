@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-20 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:pt-60"
+      className="relative z-30 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:pt-60"
     >
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-4 text-center lg:w-1/2 lg:text-start">

@@ -86,3 +86,11 @@ body {
 .animate-spinBlob {
   animation: spinBlob 5s linear infinite;
 }
+.noise {
+  opacity: 0.02;
+  inset: -200%;
+  position: absolute;
+  background-size: 256px 256px;
+  background-repeat: repeat;
+  background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
+}

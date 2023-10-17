@@ -54,7 +54,7 @@ const designIcon = (
 
 const Skills = () => {
   return (
-    <div className="relative z-20 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
+    <div id="services" className="relative z-30 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
       <div className="flex h-fit w-full max-w-screen-xl flex-col items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-col lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full w-full flex-col items-center gap-4 text-center">
           <h2 className="text-6xl font-bold text-white dark:text-gray-dark xl:text-8xl">

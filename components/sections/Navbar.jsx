@@ -1,9 +1,12 @@
+"use client";
+
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Link from "next/link";
 import disableScroll from "disable-scroll";
 import ButtonOutline from "../ButtonOutline";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [animate] = useAutoAnimate();
@@ -18,30 +21,28 @@ const Navbar = () => {
     else disableScroll.off();
   }, [navbar]);
 
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 100;
-      if (isScrolled !== scrolled) {
-        setScrolled(!scrolled);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 100;
+  //     if (isScrolled !== scrolled) {
+  //       setScrolled(!scrolled);
+  //     }
+  //   };
 
-    document.addEventListener("scroll", handleScroll, { passive: true });
+  //   document.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      // cleanup
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
+  //   return () => {
+  //     // cleanup
+  //     document.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [scrolled]);
 
   return (
     <nav>
       <div
-        className={`fixed top-0 z-50 flex w-full justify-center py-4 duration-500 ease-linear md:justify-center ${
-          scrolled ? "" : "bg-transparent dark:bg-transparent"
-        }
+        className={`fixed top-0 z-50 flex w-full justify-center py-4 duration-500 ease-linear md:justify-center 
     `}
       >
         <div
@@ -73,27 +74,39 @@ const Navbar = () => {
 
         <div className="text-md font-md hidden w-full items-center justify-center text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="dark:text-black">
-            <ul className="flex gap-8">
-              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
-                <Link scroll={false} href="/#hero">
-                  Home
-                </Link>
-              </li>
-              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
-                <Link scroll={false} href="#about">
-                  About
-                </Link>
-              </li>
-              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
-                <Link scroll={false} href="/">
-                  Skills
-                </Link>
-              </li>
-              <li className="rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88]">
-                <Link scroll={false} href="/works">
-                  Works
-                </Link>
-              </li>
+            <ul className="flex w-full max-w-screen-xl items-center justify-between py-4">
+              <ul className="relative flex gap-10 text-sm sm:text-base">
+                {/* Map through navigation items and create NavLink elements. */}
+
+                <li>
+                  <Link
+                    scroll={false}
+                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    href="/#hero"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    scroll={false}
+                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    href="/#about"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    scroll={false}
+                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    href="/#services"
+                  >
+                    Services
+                  </Link>
+                </li>
+              </ul>
+              {/* Underline element to indicate the active navigation item. */}
             </ul>
           </div>
         </div>
