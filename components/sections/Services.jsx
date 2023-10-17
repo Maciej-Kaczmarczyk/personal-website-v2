@@ -6,13 +6,13 @@ const codeIcon = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke-width="1.5"
+    strokeWidth="1.5"
     stroke="currentColor"
     className="h-6 w-6"
   >
     <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
     />
   </svg>
@@ -23,13 +23,13 @@ const uiIcon = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke-width="1.5"
+    strokeWidth="1.5"
     stroke="currentColor"
     className="h-6 w-6"
   >
     <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
     />
   </svg>
@@ -40,13 +40,13 @@ const designIcon = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke-width="1.5"
+    strokeWidth="1.5"
     stroke="currentColor"
     className="h-6 w-6"
   >
     <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
     />
   </svg>
@@ -54,7 +54,10 @@ const designIcon = (
 
 const Skills = () => {
   return (
-    <div id="services" className="relative z-30 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32">
+    <div
+      id="services"
+      className="relative z-30 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32"
+    >
       <div className="flex h-fit w-full max-w-screen-xl flex-col items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-col lg:items-center xl:max-w-screen-xl ">
         <div className="flex h-full w-full flex-col items-center gap-4 text-center">
           <h2 className="text-6xl font-bold text-white dark:text-gray-dark xl:text-8xl">
@@ -74,9 +77,7 @@ const Skills = () => {
               Javascript, React, and Tailwind in addition I also have basic
               skills in Nodejs, Python, SQL, and MongoDB
             </p>
-            <ButtonFill className={"mt-20 w-full"}>
-              See more
-            </ButtonFill>
+            <ButtonFill className={"mt-20 w-full"}>See more</ButtonFill>
             <div
               className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
             ></div>
@@ -91,7 +92,7 @@ const Skills = () => {
             </p>
             <ButtonFill
               className={
-                "mt-20 w-full bg-green hover:bg-green-light shadow-green-light"
+                "mt-20 w-full bg-green shadow-green-light hover:bg-green-light"
               }
             >
               See more

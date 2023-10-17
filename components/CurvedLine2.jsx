@@ -14,7 +14,7 @@ const CurvedLine = ({ className }) => {
         <path
           d="M20.5 290C117.167 243.167 392.8 169.8 722 251C1051.2 332.2 1396.5 160 1562 96.5C1727.5 33.0001 1963 4.50004 2017.5 33"
           stroke="#265FFF"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </g>
       <defs>
@@ -25,9 +25,9 @@ const CurvedLine = ({ className }) => {
           width="2037.9"
           height="309.959"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

@@ -4,22 +4,8 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Blob from "../components/Blob";
 import Skills from "@/components/sections/Services";
-import { animated, useSpring, easings } from "@react-spring/web";
 
 export default function Home() {
-  const { value } = useSpring({
-    from: {
-      value: 0,
-    },
-    to: {
-      value: 1,
-    },
-    loop: true,
-    config: {
-      duration: 8000,
-    },
-  });
-
   return (
     <>
       <Head>
@@ -32,11 +18,11 @@ export default function Home() {
       <div className="-z-00 absolute top-0 hidden h-[3000px] w-[100vw] overflow-hidden lg:block">
         <div className="absolute top-0 z-20 hidden h-[3000px] w-[100vw] overflow-hidden backdrop-blur-[10vmax] backdrop-filter lg:block"></div>
         <Blob />
+        
       </div>
       <Hero />
       <About />
       <Skills />
-      
     </>
   );
 }

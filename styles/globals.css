@@ -18,6 +18,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 :root {
@@ -88,9 +89,10 @@ body {
 }
 .noise {
   opacity: 0.02;
-  inset: -200%;
   position: absolute;
-  background-size: 256px 256px;
+  top: 0;
+  inset: 0;
+  height: 100%;
   background-repeat: repeat;
   background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
 }

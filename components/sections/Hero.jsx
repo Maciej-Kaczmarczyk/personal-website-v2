@@ -1,10 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import ButtonFill from "../ButtonFill";
 import ButtonOutline from "../ButtonOutline";
 import CurvedLine from "../CurvedLine1";
 import CurvedLine2 from "../CurvedLine2";
-import WavyLine from "../WavyLine";
 
 const Hero = () => {
   return (
@@ -15,7 +13,9 @@ const Hero = () => {
       <div className="flex flex-col">
         <div className="relative flex h-full flex-col items-center gap-7 text-center">
           <h2 className="relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-7xl font-black text-transparent drop-shadow-sm xl:text-8xl">
-            <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">Need a </span>
+            <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">
+              Need a{" "}
+            </span>
             <span className="headerGradient relative z-30">
               creative person
             </span>{" "}
@@ -32,7 +32,6 @@ const Hero = () => {
           </div>
           <CurvedLine className="absolute -top-[230px] z-10 " />
           <CurvedLine2 className="absolute -top-[70px] z-10" />
-          <WavyLine className="absolute -bottom-[100px] z-10" />
         </div>
 
         <div className="relative flex h-48 w-full items-center justify-end lg:h-fit lg:w-1/2">

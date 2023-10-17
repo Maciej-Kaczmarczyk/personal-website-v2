@@ -14,10 +14,10 @@ const CurvedLine = ({ className }) => {
         <path
           d="M-38.5 575.5C138.5 462.167 573.6 268.1 898 398.5C1222.4 528.9 1746.17 201.167 1967.5 21"
           stroke="#8526FF"
-          stroke-width="2"
-          stroke-miterlimit="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
@@ -28,9 +28,9 @@ const CurvedLine = ({ className }) => {
           width="2048"
           height="596.5"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

@@ -5,10 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        
         <Main />
         <NextScript />
-        <div className="noise z-20"></div>
+        <div className="noise top-0 z-20"></div>
       </body>
     </Html>
   );

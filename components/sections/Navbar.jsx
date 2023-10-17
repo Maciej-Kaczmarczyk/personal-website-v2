@@ -21,29 +21,28 @@ const Navbar = () => {
     else disableScroll.off();
   }, [navbar]);
 
-  // const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const isScrolled = window.scrollY > 100;
-  //     if (isScrolled !== scrolled) {
-  //       setScrolled(!scrolled);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 100;
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled);
+      }
+    };
 
-  //   document.addEventListener("scroll", handleScroll, { passive: true });
+    document.addEventListener("scroll", handleScroll, { passive: true });
 
-  //   return () => {
-  //     // cleanup
-  //     document.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [scrolled]);
+    return () => {
+      // cleanup
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
 
   return (
     <nav>
       <div
-        className={`fixed top-0 z-50 flex w-full justify-center py-4 duration-500 ease-linear md:justify-center 
-    `}
+        className={`fixed top-0 z-50 flex w-full justify-center py-4 duration-500 ease-linear md:justify-center`}
       >
         <div
           className={
@@ -59,7 +58,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.8"
             stroke="currentColor"
-            className="h-fit w-8 text-white dark:text-black"
+            className="h-fit w-8 text-white dark:text-black z-20"
           >
             <path
               strokeLinecap="round"
@@ -72,16 +71,24 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div className="text-md font-md hidden w-full items-center justify-center text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div
+          className={`font-md hidden w-full items-center justify-center text-white  md:flex md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl `}
+        >
           <div className="dark:text-black">
-            <ul className="flex w-full max-w-screen-xl items-center justify-between py-4">
-              <ul className="relative flex gap-10 text-sm sm:text-base">
+            <ul
+              className={`flex w-full max-w-screen-xl items-center justify-between py-3 px-3 drop-shadow-md  ${
+                scrolled
+                  ? "rounded-full bg-[#0b0b15] shadow-xl ring-1 ring-gray duration-700 dark:bg-gray-dark"
+                  : "bg-transparent duration-700"
+              }`}
+            >
+              <ul className="relative flex gap-10 text-sm">
                 {/* Map through navigation items and create NavLink elements. */}
 
                 <li>
                   <Link
                     scroll={false}
-                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    className={`rounded-full px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#ffffff14] `}
                     href="/#hero"
                   >
                     Home
@@ -90,7 +97,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     scroll={false}
-                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    className={`rounded-full px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#ffffff14] `}
                     href="/#about"
                   >
                     About
@@ -99,7 +106,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     scroll={false}
-                    className={`rounded-lg px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#4851be88] `}
+                    className={`rounded-full px-4 py-1 duration-200 hover:cursor-pointer hover:bg-[#ffffff14] `}
                     href="/#services"
                   >
                     Services
