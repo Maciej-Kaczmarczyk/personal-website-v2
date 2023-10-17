@@ -78,7 +78,7 @@ const Navbar = () => {
             <ul
               className={`flex w-full max-w-screen-xl items-center justify-between py-3 px-3 drop-shadow-md  ${
                 scrolled
-                  ? "rounded-full bg-[#0b0b15] shadow-xl ring-1 ring-gray duration-700 dark:bg-gray-dark"
+                  ? "rounded-full bg-[#0b0b15] shadow-xl ring-1 ring-gray duration-700 dark:bg-gray-dark bg-opacity-80"
                   : "bg-transparent duration-700"
               }`}
             >
