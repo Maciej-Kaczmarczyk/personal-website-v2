@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonFill from "../ButtonFill";
+import CheckboxWithText from "../CheckboxWithText";
 
 const codeIcon = (
   <svg
@@ -56,74 +57,53 @@ const Skills = () => {
   return (
     <div
       id="services"
-      className="relative z-30 my-20 flex h-fit w-full justify-center overflow-x-clip p-4 md:my-0 lg:my-32"
+      className="relative z-30 my-20 flex h-fit w-full flex-col justify-center overflow-x-clip bg-gray-dark py-20 md:my-0 lg:my-32"
     >
-      <div className="flex h-fit w-full max-w-screen-xl flex-col items-start justify-between gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-col lg:items-center xl:max-w-screen-xl ">
-        <div className="flex h-full w-full flex-col items-center gap-4 text-center">
-          <h2 className="text-6xl font-bold text-white dark:text-gray-dark xl:text-8xl">
-            My skills
-          </h2>
-          <h1 className=" max-w-md justify-center text-[#919EC0] dark:text-black lg:max-w-none xl:text-2xl">
-            Some of my awsome skills
-          </h1>
-        </div>
-
-        <div className="mt-10 flex w-full flex-wrap items-center justify-around gap-6 gap-y-20">
-          <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
-            <div className={`w-fit rounded-xl bg-blue p-4`}>{codeIcon}</div>
-            <h2 className=" text-5xl font-bold dark:text-gray">Code</h2>
-            <p className="text-lg dark:text-gray">
-              I have frontend skills in technologies such as HTML, CSS,
-              Javascript, React, and Tailwind in addition I also have basic
-              skills in Nodejs, Python, SQL, and MongoDB
-            </p>
-            <ButtonFill className={"mt-20 w-full"}>See more</ButtonFill>
-            <div
-              className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
-            ></div>
+      <h2 className="relative z-20 mb-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-center text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-7xl ">
+        <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">
+          All services you need
+        </span>
+        <br />
+        <span className="headerGradient relative z-30">in one place</span>{" "}
+      </h2>
+      <div className="flex w-full flex-col">
+        <div className="flex w-full">
+          <div className="flex w-5/12 items-center justify-end">
+            <div className="flex max-w-[500px] flex-col gap-10">
+              <h3 className="text-6xl font-bold text-white">Graphic design</h3>
+              <p className="text-3xl font-medium text-white">
+                Graphic design on all unnecessary assets and more.
+              </p>
+              <CheckboxWithText text="Logo design" color="#0043FF" />
+            </div>
           </div>
-          <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
-            <div className={`w-fit rounded-xl bg-green p-4`}>{uiIcon}</div>
-            <h2 className=" text-5xl font-bold dark:text-gray">UI/UX</h2>
-            <p className="text-lg dark:text-gray">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              assumenda odit eius voluptatem temporibus molestiae incidunt
-              quidem libero impedit corporis!
-            </p>
-            <ButtonFill
-              className={
-                "mt-20 w-full bg-green shadow-green-light hover:bg-green-light"
-              }
-            >
-              See more
-            </ButtonFill>
-            <div
-              className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-green opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
-            ></div>
+          <div className="flex w-2/12 flex-col items-center justify-center">
+            <div className="aspect-square w-5 rounded-full my-4 bg-white"></div>
+            <div className="h-full w-1 bg-white rounded-3xl"></div>
           </div>
-          <div className="card from-cyan-500 to-blue-500 relative flex max-w-sm flex-col gap-8 overflow-hidden rounded-3xl bg-gradient-to-r p-8 text-white lg:max-w-sm">
-            <div className={`w-fit rounded-xl bg-purple p-4`}>{designIcon}</div>
-            <h2 className=" text-5xl font-bold dark:text-gray">Design</h2>
-            <p className="text-lg dark:text-gray">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              assumenda odit eius voluptatem temporibus molestiae incidunt
-              quidem libero impedit corporis!
-            </p>
-            <ButtonFill
-              className={
-                "mt-20 w-full bg-purple hover:bg-purple-light hover:shadow-purple-light"
-              }
-            >
-              See more
-            </ButtonFill>
-            <div
-              className={`absolute -top-40 -left-40 -z-10 aspect-square w-full rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]`}
-            ></div>
+          <div className="w-5/12 py-20 pr-20">
+            <div className=" aspect-video w-full rounded-3xl bg-blue"></div>
           </div>
         </div>
-
-        <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]"></div>
-        <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
+        <div className="flex w-full flex-row-reverse">
+          <div className="flex w-5/12 items-center justify-start">
+            <div className="flex max-w-[500px] flex-col gap-10">
+              <h3 className="text-6xl font-bold text-white">Graphic design</h3>
+              <p className="text-3xl font-medium text-white">
+                Graphic design on all unnecessary assets and more.
+              </p>
+              <CheckboxWithText text="Logo design" color="#0043FF" />
+            </div>
+          </div>
+          <div className="flex w-2/12 flex-col items-center justify-center">
+            <div className=" aspect-square w-5 rounded-full bg-white my-4"></div>
+            <div className="h-full w-1 bg-white rounded-3xl"></div>
+          </div>
+          <div className="w-5/12 py-20 pl-20">
+            <div className=" aspect-video w-full rounded-3xl bg-blue"></div>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

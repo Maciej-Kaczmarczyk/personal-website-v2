@@ -9,7 +9,6 @@
     @apply bg-gray-dark dark:bg-white;
     @apply box-border;
     @apply overflow-y-auto;
-    @apply overflow-x-hidden;
     @apply transition-colors duration-500;
     @apply scroll-smooth;
   }
@@ -29,11 +28,6 @@ body {
   from {
     rotate: 0deg;
   }
-
-  50% {
-    scale: 1 1.5;
-  }
-
   to {
     rotate: 360deg;
   }

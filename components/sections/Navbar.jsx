@@ -47,7 +47,7 @@ const Navbar = () => {
         <div
           className={
             !navbar
-              ? "mx-4 flex w-full flex-row-reverse items-center justify-between md:hidden"
+              ? "flex w-full flex-row-reverse items-center justify-between md:hidden"
               : "hidden"
           }
           onClick={toggleNavbar}
@@ -58,7 +58,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.8"
             stroke="currentColor"
-            className="h-fit w-8 text-white dark:text-black z-20"
+            className="z-20 h-fit w-8 text-white dark:text-black"
           >
             <path
               strokeLinecap="round"
@@ -78,7 +78,7 @@ const Navbar = () => {
             <ul
               className={`flex w-full max-w-screen-xl items-center justify-between py-3 px-3 drop-shadow-md  ${
                 scrolled
-                  ? "rounded-full bg-[#0b0b15] shadow-xl ring-1 ring-gray duration-700 dark:bg-gray-dark bg-opacity-80"
+                  ? "rounded-full bg-[#0b0b15] bg-opacity-80 shadow-xl ring-1 ring-gray duration-700 dark:bg-gray-dark"
                   : "bg-transparent duration-700"
               }`}
             >
