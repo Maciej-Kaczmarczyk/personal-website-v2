@@ -57,7 +57,7 @@ const Skills = () => {
   return (
     <div
       id="services"
-      className="relative z-30 my-20 flex h-fit w-full flex-col justify-center overflow-x-clip bg-gray-dark py-20 md:my-0 lg:my-32"
+      className="relative z-30 flex h-fit w-full flex-col justify-center overflow-x-clip bg-gray-dark md:my-0 lg:my-32"
     >
       <h2 className="relative z-20 mb-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-center text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-6xl ">
         <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">
@@ -67,18 +67,18 @@ const Skills = () => {
         <span className="headerGradient relative z-30">in one place</span>{" "}
       </h2>
       <div className="flex w-full flex-col">
-        <div className="flex flex-col lg:flex-row w-full">
-          <div className="flex lg:w-5/12 justify-center items-center lg:justify-end">
-            <div className="flex lg:max-w-[500px] flex-col gap-10">
-              <h3 className="text-5xl font-bold text-white">Graphic design</h3>
-              <p className="text-2xl font-medium text-white">
+        <div className="flex w-full flex-col-reverse lg:flex-row">
+          <div className="flex items-center justify-center lg:w-5/12 lg:justify-end">
+            <div className="flex flex-col gap-6 lg:gap-10 text-center lg:max-w-[500px]">
+              <h3 className="text-4xl lg:text-5xl font-bold text-white">Graphic design</h3>
+              <p className="font-light text-white opacity-80 lg:text-2xl ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur temporibus eius beatae culpa, molestiae voluptatem
                 nam aliquam optio fugiat vitae blanditiis voluptas soluta itaque
                 vero dignissimos voluptatum corporis nesciunt facilis asperiores
                 sapiente sit tempore illo. Deserunt, non quos
               </p>
-              <div className="flex flex-wrap gap-5">
+              <div className="flex flex-wrap justify-between gap-5">
                 <CheckboxWithText text="Logo design" color="#0043FF" />
                 <CheckboxWithText text="Logo design" color="#0043FF" />
                 <CheckboxWithText text="Logo design" color="#0043FF" />
@@ -86,11 +86,11 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="hidden lg:flex w-2/12 flex-col items-center justify-center">
+          <div className="hidden w-2/12 flex-col items-center justify-center lg:flex">
             <div className="my-4 aspect-square w-5 rounded-full bg-white"></div>
             <div className="h-full w-1 rounded-3xl bg-white"></div>
           </div>
-          <div className="lg:w-5/12 py-20 lg:pr-20">
+          <div className="py-10 lg:py-20 lg:w-5/12 lg:pr-20">
             <div className=" aspect-video w-full rounded-3xl bg-blue"></div>
           </div>
         </div>

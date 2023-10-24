@@ -47,7 +47,7 @@ const Navbar = () => {
         <div
           className={
             !navbar
-              ? "flex w-full flex-row-reverse items-center justify-between md:hidden"
+              ? "flex w-full flex-row-reverse items-center justify-between px-4 md:hidden"
               : "hidden"
           }
           onClick={toggleNavbar}
@@ -66,9 +66,6 @@ const Navbar = () => {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <p className="text-2xl font-bold text-white dark:text-[#090911]">
-            <span className="text-blue"></span> Maciek
-          </p>
         </div>
 
         <div
@@ -120,14 +117,14 @@ const Navbar = () => {
       </div>
       {navbar ? (
         <div className="fixed top-0 z-50 flex h-[100vh] w-full flex-col overflow-hidden bg-gray-dark dark:bg-white md:hidden">
-          <div className="flex justify-end " onClick={toggleNavbar}>
+          <div className="flex justify-end p-4" onClick={toggleNavbar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="m-5 h-fit w-8 text-white duration-[200ms] ease-in-out dark:text-gray-dark"
+              className="h-fit w-8 text-white duration-[200ms] ease-in-out dark:text-gray-dark"
             >
               <path
                 strokeLinecap="round"
