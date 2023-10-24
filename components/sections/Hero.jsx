@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative z-30 flex h-fit w-[100vw] justify-center pt-24 sm:pt-32 lg:pt-72 mb-60"
+      className="relative z-30 flex h-fit w-[100vw] justify-center pt-24 sm:pt-32 lg:pt-72 mb-64"
     >
       <div className="relative flex h-full flex-col items-center gap-7 text-center">
         <h2 className="relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-8xl">

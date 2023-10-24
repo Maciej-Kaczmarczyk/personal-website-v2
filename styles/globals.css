@@ -74,6 +74,12 @@ body {
   background: linear-gradient(99deg, #0043ff 50%, #6f00ff 50%);
 }
 @keyframes spinBlob {
+  from {
+    transform: rotate(1 1 0deg);
+  }
+  50% {
+    scale: 1 1.2;
+  }
   to {
     transform: rotate(360deg);
   }
