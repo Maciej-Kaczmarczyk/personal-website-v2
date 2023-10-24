@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative z-30 flex h-fit w-[100vw] justify-center pt-24 sm:pt-32 lg:pt-72 mb-64"
+      className="relative z-30 mb-64 flex h-fit w-[100vw] justify-center pt-24 sm:pt-32 lg:pt-72"
     >
       <div className="relative flex h-full flex-col items-center gap-7 text-center">
         <h2 className="relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-8xl">
@@ -18,7 +18,7 @@ const Hero = () => {
           <span className="headerGradient relative z-30">creative person</span>{" "}
           <br /> for your project?
         </h2>
-        <h1 className="font-light max-w-3xl text-white opacity-80 xl:text-xl xl:leading-relaxed">
+        <h1 className="max-w-3xl font-light text-white opacity-80 xl:text-xl xl:leading-relaxed">
           You are in the right place! My name is Maciek and I will be happy to
           help with all kind of creative work, from graphic design, UI/UX to
           development of website and SEO. Feel free to contact me!

@@ -59,7 +59,7 @@ const Skills = () => {
       id="services"
       className="relative z-30 my-20 flex h-fit w-full flex-col justify-center overflow-x-clip bg-gray-dark py-20 md:my-0 lg:my-32"
     >
-      <h2 className="relative z-20 mb-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-center text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-7xl ">
+      <h2 className="relative z-20 mb-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text py-2 text-center text-5xl font-extrabold text-transparent drop-shadow-sm lg:text-6xl ">
         <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">
           All services you need
         </span>
@@ -67,43 +67,33 @@ const Skills = () => {
         <span className="headerGradient relative z-30">in one place</span>{" "}
       </h2>
       <div className="flex w-full flex-col">
-        <div className="flex w-full">
-          <div className="flex w-5/12 items-center justify-end">
-            <div className="flex max-w-[500px] flex-col gap-10">
-              <h3 className="text-6xl font-bold text-white">Graphic design</h3>
-              <p className="text-3xl font-medium text-white">
-                Graphic design on all unnecessary assets and more.
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="flex lg:w-5/12 justify-center items-center lg:justify-end">
+            <div className="flex lg:max-w-[500px] flex-col gap-10">
+              <h3 className="text-5xl font-bold text-white">Graphic design</h3>
+              <p className="text-2xl font-medium text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur temporibus eius beatae culpa, molestiae voluptatem
+                nam aliquam optio fugiat vitae blanditiis voluptas soluta itaque
+                vero dignissimos voluptatum corporis nesciunt facilis asperiores
+                sapiente sit tempore illo. Deserunt, non quos
               </p>
-              <CheckboxWithText text="Logo design" color="#0043FF" />
+              <div className="flex flex-wrap gap-5">
+                <CheckboxWithText text="Logo design" color="#0043FF" />
+                <CheckboxWithText text="Logo design" color="#0043FF" />
+                <CheckboxWithText text="Logo design" color="#0043FF" />
+                <CheckboxWithText text="Logo design" color="#0043FF" />
+              </div>
             </div>
           </div>
-          <div className="flex w-2/12 flex-col items-center justify-center">
-            <div className="aspect-square w-5 rounded-full my-4 bg-white"></div>
-            <div className="h-full w-1 bg-white rounded-3xl"></div>
+          <div className="hidden lg:flex w-2/12 flex-col items-center justify-center">
+            <div className="my-4 aspect-square w-5 rounded-full bg-white"></div>
+            <div className="h-full w-1 rounded-3xl bg-white"></div>
           </div>
-          <div className="w-5/12 py-20 pr-20">
+          <div className="lg:w-5/12 py-20 lg:pr-20">
             <div className=" aspect-video w-full rounded-3xl bg-blue"></div>
           </div>
         </div>
-        <div className="flex w-full flex-row-reverse">
-          <div className="flex w-5/12 items-center justify-start">
-            <div className="flex max-w-[500px] flex-col gap-10">
-              <h3 className="text-6xl font-bold text-white">Graphic design</h3>
-              <p className="text-3xl font-medium text-white">
-                Graphic design on all unnecessary assets and more.
-              </p>
-              <CheckboxWithText text="Logo design" color="#0043FF" />
-            </div>
-          </div>
-          <div className="flex w-2/12 flex-col items-center justify-center">
-            <div className=" aspect-square w-5 rounded-full bg-white my-4"></div>
-            <div className="h-full w-1 bg-white rounded-3xl"></div>
-          </div>
-          <div className="w-5/12 py-20 pl-20">
-            <div className=" aspect-video w-full rounded-3xl bg-blue"></div>
-          </div>
-        </div>
-        
       </div>
     </div>
   );
