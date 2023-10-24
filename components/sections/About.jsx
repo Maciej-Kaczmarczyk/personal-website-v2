@@ -12,18 +12,17 @@ const About = () => {
     >
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-7 text-center lg:w-1/2 lg:text-start">
-          <h2 className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-7xl font-bold text-transparent dark:text-gray-dark">
+          <h2 className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-6xl font-bold text-transparent dark:text-gray-dark">
             About me
           </h2>
           <h1 className="max-w-md text-white opacity-80 dark:text-black lg:max-w-none xl:text-xl xl:leading-relaxed">
-            My name is Maciek Kaczmarczyk and I&apos;m a creative person based
-            in Poland. My main goal is just to create awesome things. Now
-            I&apos;m 21 years old but since 14 I have already tried graphic
-            design, video editing, and 3D modeling. Since last year I have been
-            mainly focused on UI/UX designing and fronted development. My
-            greatest asset is that I love to learn new things and technologies.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            temporibus eius beatae culpa, molestiae voluptatem nam aliquam optio
+            fugiat vitae blanditiis voluptas soluta itaque vero dignissimos
+            voluptatum corporis nesciunt facilis asperiores sapiente sit tempore
+            illo. Deserunt, non quos
           </h1>
-          <div className="mt-6 flex items-center gap-8 xl:justify-start">
+          <div className="mt-6 flex items-center gap-4 lg:gap-8 xl:justify-start">
             <ButtonFill className="flex justify-center">
               <div className="flex items-center justify-center gap-2">
                 <svg
@@ -43,7 +42,7 @@ const About = () => {
                 <p>Resume</p>
               </div>
             </ButtonFill>
-            <CheckboxWithText text="Available for freelance" color="#2DA539" />
+            <CheckboxWithText text="Available for work" color="#2DA539" />
           </div>
         </div>
 

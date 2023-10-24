@@ -18,7 +18,6 @@ const CheckboxWithText = ({ text, color }) => {
       <p className="text-left text-lg leading-5 text-white dark:text-gray-dark">
         {text}
       </p>
-      <div className="absolute top-1/4 left-1 z-20 aspect-square w-4 rounded-full bg-white"></div>
     </div>
   );
 };
