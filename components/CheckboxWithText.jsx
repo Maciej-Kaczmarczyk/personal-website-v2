@@ -7,7 +7,7 @@ const CheckboxWithText = ({ text, color }) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill={color}
-        className="relative z-30 h-7 w-7"
+        className="relative z-30 aspect-square w-5"
       >
         <path
           fillRule="evenodd"
@@ -15,7 +15,7 @@ const CheckboxWithText = ({ text, color }) => {
           clipRule="evenodd"
         />
       </svg>
-      <p className="text-left text-lg leading-5 text-white dark:text-gray-dark">
+      <p className="text-left text-base lg:text-lg leading-5 text-white dark:text-gray-dark">
         {text}
       </p>
     </div>
