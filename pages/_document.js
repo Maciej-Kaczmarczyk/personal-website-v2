@@ -7,7 +7,7 @@ export default function Document() {
       <body className="overflow-x-clip overflow-y-hidden">
         <Main />
         <NextScript />
-        {/* <div className="noise top-0 z-20"></div> */}
+        <div className="noise top-0 z-20"></div>
       </body>
     </Html>
   );
