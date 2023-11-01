@@ -1,14 +1,15 @@
-import React from "react";
+import React, { use, useEffect } from "react";
 import avatar from "../../public/avatar.png";
 import Image from "next/image";
 import ButtonFill from "../ButtonFill";
 import CheckboxWithText from "../CheckboxWithText";
+import Link from "next/link";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="relative z-30 my-20 flex h-fit w-full justify-center md:my-20 lg:pt-60"
+      className="relative z-30 my-20 flex h-fit w-full justify-center px-4 md:my-20 lg:pt-60"
     >
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-7 text-center lg:w-1/2 lg:text-start">
@@ -22,25 +23,27 @@ const About = () => {
             voluptatum corporis nesciunt facilis asperiores sapiente sit tempore
             illo. Deserunt, non quos
           </h1>
-          <div className="mt-6 flex items-center gap-4 lg:gap-8 xl:justify-start">
+          <div className="mt-6 flex items-center justify-between gap-4 lg:gap-8 xl:justify-start">
             <ButtonFill className="flex justify-center">
-              <div className="flex items-center justify-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  />
-                </svg>
-                <p>Resume</p>
-              </div>
+              <Link href="Maciej_Kaczmarczyk_CV_ENG.pdf" target="_blank">
+                <div className="flex items-center justify-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    />
+                  </svg>
+                  <p>Resume</p>
+                </div>
+              </Link>
             </ButtonFill>
             <CheckboxWithText text="Available for work" color="#2DA539" />
           </div>

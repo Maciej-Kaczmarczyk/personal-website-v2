@@ -39,10 +39,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <Layout>
-        <Skills />
-        <About />
-      </Layout>
+      <Skills />
+      <About />
       <Blob />
     </>
   );
