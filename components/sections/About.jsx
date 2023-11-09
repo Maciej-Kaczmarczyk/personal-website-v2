@@ -4,6 +4,7 @@ import Image from "next/image";
 import ButtonFill from "../ButtonFill";
 import CheckboxWithText from "../CheckboxWithText";
 import Link from "next/link";
+import BgGradient from "../BgGradient";
 
 const About = () => {
   return (
@@ -63,9 +64,8 @@ const About = () => {
           ></div>
         </div>
 
-        <div className="absolute top-40 left-0 -z-10 aspect-square w-[20vw] rounded-full bg-purple opacity-50 blur-[100px] dark:opacity-70 lg:blur-[200px]"></div>
-        <div className="absolute bottom-40 right-0 -z-10 aspect-square w-[20vw] rounded-full bg-blue opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
-        <div className="bg-yellow bottom-40 right-0 -z-10 hidden aspect-square w-[20vw] rounded-full opacity-50 blur-[100px] dark:opacity-70 md:top-10 lg:blur-[200px]"></div>
+        <BgGradient className={"top-40 left-0 -z-10 bg-purple"}></BgGradient>
+        <BgGradient className={"bottom-40 right-0 -z-10 bg-blue"}></BgGradient>
       </div>
     </div>
   );
