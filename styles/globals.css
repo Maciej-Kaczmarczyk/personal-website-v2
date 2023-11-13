@@ -66,10 +66,13 @@ body {
 }
 .headerGradient {
   background: linear-gradient(99deg, #0043ff 10%, #6f00ff 70%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
 }
+
 .blobGradient {
   background: linear-gradient(99deg, #0043ff 50%, #6f00ff 50%);
 }
@@ -85,7 +88,7 @@ body {
   animation: spinBlob 5s linear infinite;
 }
 .noise {
-  opacity: 0.02;
+  opacity: 0.018;
   position: absolute;
   top: 0;
   inset: 0;

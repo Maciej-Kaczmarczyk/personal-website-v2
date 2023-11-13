@@ -19,7 +19,7 @@ const Hero = () => {
           <span className="headerGradient relative z-30">creative person</span>{" "}
           <br /> for your project?
         </h2>
-        <h1 className="max-w-3xl px-4 text-lg font-light text-white opacity-80 xl:text-xl xl:leading-relaxed">
+        <h1 className="max-w-3xl z-20 px-4 text-lg font-light text-white opacity-80 xl:text-xl xl:leading-relaxed">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cum
           praesentium ad harum ullam placeat
         </h1>
