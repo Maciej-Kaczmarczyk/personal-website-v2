@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-dark dark:bg-white;
+    @apply bg-black dark:bg-white;
     @apply box-border;
     @apply overflow-y-auto;
     @apply transition-colors duration-500;
@@ -37,7 +37,7 @@ body {
   border: 1px solid;
   background: linear-gradient(
     114.55deg,
-    rgba(255, 255, 255, 0.1) 2.13%,
+    rgba(255, 255, 255, 0) 2.13%,
     rgba(255, 255, 255, 0) 98.14%
   );
 
@@ -95,4 +95,8 @@ body {
   height: 100%;
   background-repeat: repeat;
   background: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
+}
+
+.dynamicElement {
+  will-change: transform, opacity, left, top;
 }
