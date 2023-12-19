@@ -8,11 +8,15 @@ export const Blob = () => {
   const [isChromium, setIsChromium] = useState(false);
 
   useEffect(() => {
-    // Since window is not available during SSR, we perform this check inside useEffect
-    setIsChromium(typeof window !== 'undefined' && Bowser.getParser(window.navigator.userAgent).parsedResult.engine.name === "Blink");
+    setIsChromium(
+      typeof window !== "undefined" &&
+        Bowser.getParser(window.navigator.userAgent).parsedResult.engine
+          .name === "Blink"
+    );
 
+    // Don't execute the rest of the code if not Chromium
     if (!isChromium) {
-      return; // Don't execute the rest of the code if not Chromium
+      return;
     }
 
     // get window size
@@ -21,13 +25,19 @@ export const Blob = () => {
 
     // set blob position to center of screen
     window.onload = () => {
-      blob.current.style = `top: ${windowWidth / 2 - 300}px; left: ${windowHeight / 2 - 300}px;`;
+      blob.current.style = `top: ${windowWidth / 2 - 300}px; left: ${
+        windowHeight / 2 - 300
+      }px;`;
     };
 
     // move blob on mouse move
     document.body.onpointermove = (event) => {
-      blob.current.style = `top: ${windowWidth / 2 - 300}px; left: ${windowHeight / 2 - 300}px;`;
-      blob.current.style.transform = `translate(${event.clientX - windowHeight / 2}px, ${event.clientY - windowWidth / 2}px)`;
+      blob.current.style = `top: ${windowWidth / 2 - 300}px; left: ${
+        windowHeight / 2 - 300
+      }px;`;
+      blob.current.style.transform = `translate(${
+        event.clientX - windowHeight / 2
+      }px, ${event.clientY - windowWidth / 2}px)`;
     };
   }, [isChromium]);
 
@@ -42,9 +52,9 @@ export const Blob = () => {
 
       <div
         ref={blob}
-        className="accelerated absolute top-1/2 left-1/2 -z-10 hidden aspect-[1] w-[600px] -translate-x-1/2 -translate-y-1/2 transform duration-1000 ease-out lg:block"
+        className="dynamicElement absolute top-1/2 left-1/2 -z-10 hidden aspect-[1] w-[600px] -translate-x-1/2 -translate-y-1/2 transform duration-1000 ease-out lg:block"
       >
-        <div className="animate-spinBlob blobGradient h-full w-full rounded-full bg-green"></div>
+        <div className="dynamicElement animate-spinBlob blobGradient h-full w-full rounded-full bg-green"></div>
       </div>
     </div>
   );
