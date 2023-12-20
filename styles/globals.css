@@ -103,3 +103,25 @@ body {
 .dynamicElement {
   will-change: transform, opacity, left, top;
 }
+
+.slick-slide {
+  position: relative;
+  transition: transform 5s ease;
+  opacity: 0.5; /* Make non-central slides less visible */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  z-index: 10;
+  transition-duration: 300ms;
+}
+
+.slick-center {
+  position: relative;
+  transition: transform 5s ease;
+  transform: scale(1.5); /* Keep the central slide at normal scale */
+  opacity: 100; /* Make the central slide fully visible */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  z-index: 20;
+  transition-duration: 300ms;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}

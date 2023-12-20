@@ -5,6 +5,7 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Skills from "@/components/sections/Services";
 import Layout from "@/components/Layout";
+import FeaturedProjects from "@/components/sections/FeaturedProjects";
 
 const Blob = dynamic(() => import("../components/Blob"));
 
@@ -41,6 +42,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <About />
+      <FeaturedProjects />
       <Blob />
     </>
   );
