@@ -12,6 +12,9 @@
     @apply transition-colors duration-500;
     @apply scroll-smooth;
   }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 body {

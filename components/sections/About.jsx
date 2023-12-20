@@ -10,11 +10,11 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-30 my-20 flex h-fit w-full justify-center px-4 md:my-20 lg:pt-60"
+      className="relative z-30 my-20 flex h-fit w-full justify-center px-4 py-40"
     >
-      <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
+      <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-7 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-7 text-center lg:w-1/2 lg:text-start">
-          <h2 className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-6xl font-bold text-transparent dark:text-gray-dark">
+          <h2 className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-5xl font-bold text-transparent dark:text-gray-dark">
             About me
           </h2>
           <h1 className="max-w-md text-white opacity-80 dark:text-black lg:max-w-none xl:text-xl xl:leading-relaxed">

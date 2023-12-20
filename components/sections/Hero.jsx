@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="xL:mb-64 relative z-30 mb-32 flex h-fit w-[100vw] justify-center pt-16 sm:pt-32 xl:mb-96 xl:pt-72"
+      className="xL:mb-64 relative z-30 mb-32 flex h-fit w-[100vw] justify-center pt-16 sm:pt-32 xl:mb-64 xl:pt-72"
     >
       <div className="relative z-30 flex h-full flex-col items-center gap-7 text-center">
         <h2 className="relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text px-4 py-2 text-5xl font-extrabold tracking-tight text-transparent drop-shadow-sm lg:text-8xl">

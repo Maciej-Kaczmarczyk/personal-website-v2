@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import serviceExample1 from "../../public/serviceExample1.png";
-import serviceExample2 from "../../public/serviceExample2.png";
 
 const services = [
   {
@@ -14,13 +13,13 @@ const services = [
     title: "Development",
     description:
       "Development services include web development, mobile app development, and more. I can help you with your development",
-    image: serviceExample2,
+    image: serviceExample1,
   },
   {
     title: "Marketing",
     description:
       "Marketing services include SEO, social media marketing, and more. I can help you with your marketing needs.",
-    image: serviceExample2,
+    image: serviceExample1,
   },
 ];
 
@@ -33,8 +32,8 @@ const Skills = () => {
       className=" relative z-40 flex h-fit w-full flex-col items-center justify-center overflow-x-clip px-4 md:my-0 lg:px-20"
     >
       <div className="flex flex-col items-center lg:bg-none lg:border-none rounded-xl bg-opacity-20 border-[1px] border-[#4A4A4A] py-4 px-4">
-        <div className="flex w-full justify-center lg:max-w-none xl:max-w-3xl">
-          <h2 className="w-full relative z-20 my-10 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-center text-4xl font-extrabold text-transparent drop-shadow-sm lg:py-32 lg:text-6xl">
+        <div className="flex w-full justify-center lg:max-w-none xl:max-w-3xl py-10 lg:px-0">
+          <h2 className="w-full relative z-20 bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-center text-4xl font-extrabold text-transparent drop-shadow-sm lg:py-16 lg:text-6xl">
             <span className="bg-gradient-to-b from-[#E8EBF1] to-[#B7B7B7] bg-clip-text text-transparent">
               All services you need
             </span>
