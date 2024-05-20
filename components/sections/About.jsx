@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-30 my-20 flex h-fit w-full justify-center px-4 py-40"
+      className="relative z-30 lg:my-20 flex h-fit w-full justify-center px-4 py-40"
     >
       <div className="flex h-fit w-full max-w-screen-xl flex-col-reverse items-center gap-7 md:max-w-screen-md lg:max-w-screen-lg lg:flex-row-reverse lg:items-center lg:justify-between xl:max-w-screen-xl ">
         <div className="flex h-full flex-col gap-7 text-center lg:w-1/2 lg:text-start">

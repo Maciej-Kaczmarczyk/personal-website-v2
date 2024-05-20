@@ -47,7 +47,7 @@ export const Blob = () => {
   }
 
   return (
-    <div className="-z-00 fixed top-0 hidden h-[100vh] w-[100vw] overflow-hidden lg:block">
+    <div className="z-20 fixed top-0 hidden h-[100vh] w-[100vw] overflow-hidden lg:block">
       <div className="fiexd top-0 z-20 hidden h-[100vh] w-[100vw] overflow-hidden backdrop-blur-[10vmax] backdrop-filter lg:block"></div>
 
       <div

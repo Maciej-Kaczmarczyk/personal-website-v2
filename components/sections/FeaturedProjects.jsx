@@ -7,18 +7,17 @@ import Slider from "react-slick";
 import { slickNext } from "react-slick";
 
 const settings = {
-  dots: true,
   arrows: true,
   infinite: true,
   speed: 1000,
   slidesToShow: 3, // Show just a bit more than one slide
   slidesToScroll: 1,
   centerMode: true,
-  focusOnSelect: true,
+  focusOnSelect: false,
   className: "center relative w-full shadow-xl",
   responsive: [
     {
-      breakpoint: 1080,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
       },
@@ -56,14 +55,38 @@ const FeaturedProjects = () => {
           <Image src={serviceExample1} className="rounded-2xl" alt="" />
         </div>
       </Slider>
-      <div
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
         onClick={goToNext}
-        className="absolute right-0 h-[20px] w-[20px] bg-green-light"
-      ></div>
-      <div
+        className="absolute top-1/2 right-20 hidden aspect-square w-10 -translate-y-1/2 transform text-white duration-300 hover:scale-110 hover:cursor-pointer hover:text-blue-light lg:block"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
         onClick={goToPrev}
-        className="absolute left-0 h-[20px] w-[20px] bg-green-light"
-      ></div>
+        className="absolute top-1/2 left-20 hidden aspect-square w-10 -translate-y-1/2 rotate-180 transform text-white duration-300 hover:scale-110 hover:cursor-pointer hover:text-blue-light lg:block"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg>
     </div>
   );
 };
