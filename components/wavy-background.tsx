@@ -8,8 +8,7 @@ export const WavyBackground = ({
   className,
   containerClassName,
   colors,
-  waveWidth = 5,
-  backgroundFill,
+  waveWidth = 2,
   blur = 0,
   speed = "slow",
   waveOpacity = 1,
@@ -22,7 +21,6 @@ export const WavyBackground = ({
   containerClassName?: string;
   colors?: string[];
   waveWidth?: number;
-  backgroundFill?: string;
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
@@ -74,9 +72,8 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
-    ctx.fillStyle = backgroundFill || "black";
+    ctx.clearRect(0, 0, w, h);  // Clear the canvas
     ctx.globalAlpha = waveOpacity || 0.5;
-    ctx.fillRect(0, 0, w, h);
     drawWave(2);
     animationId = requestAnimationFrame(render);
   };
@@ -97,7 +94,7 @@ export const WavyBackground = ({
   return (
     <div className={cn("absolute inset-0 top-0", containerClassName)}>
       <canvas
-        className={canvasClassName}
+        className={cn("", canvasClassName)}
         ref={canvasRef}
         id="canvas"
         style={{
