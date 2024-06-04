@@ -94,7 +94,7 @@ export const WavyBackground = ({
   return (
     <div className={cn("absolute inset-0 top-0", containerClassName)}>
       <canvas
-        className={cn("", canvasClassName)}
+        className={cn("absolute", canvasClassName)}
         ref={canvasRef}
         id="canvas"
         style={{

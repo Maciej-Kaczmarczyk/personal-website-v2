@@ -18,7 +18,7 @@ const Hero = () => {
           <ButtonOutline className="w-1/2 lg:w-[200px]">Portfolio</ButtonOutline>
         </div>
       </div>
-      <WavyBackground canvasClassName="absolute -top-[380px] sm:-top-[350px] lg:-top-[250px] xl:-top-[140px] inset-0 -z-20" />
+      <WavyBackground canvasClassName="absolute -top-[380px] sm:-top-[350px] lg:-top-[250px] xl:-top-[140px] -z-20" />
       <BgGradient className="top-40 left-0 -z-10 bg-blue opacity-30"> </BgGradient>
       <BgGradient className="bottom-40 right-0 -z-10 bg-purple opacity-30"> </BgGradient>
     </div>
