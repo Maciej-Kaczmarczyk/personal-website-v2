@@ -5,17 +5,17 @@ import serviceExample1 from "../../public/serviceExample1.png";
 const services = [
   {
     title: "Design",
-    description: "My design services include UI/UX design, web design, mobile app design, and more. I can help you with your design needs.",
+    description: "UI/UX design, web design, mobile app design, and more.",
     image: serviceExample1,
   },
   {
     title: "Development",
-    description: "Development services include web development, mobile app development, and more. I can help you with your development",
+    description: "Development services include web development, mobile app development, and more.",
     image: serviceExample1,
   },
   {
     title: "Marketing",
-    description: "Marketing services include SEO, social media marketing, and more. I can help you with your marketing needs.",
+    description: "Marketing services include SEO, social media marketing, and more.",
     image: serviceExample1,
   },
 ];
